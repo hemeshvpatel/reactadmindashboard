@@ -1,4 +1,15 @@
 import React from "react";
+
+//icons
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
+
+//styles
 import * as styled from "./styles";
 
 const NavBar = () => {
@@ -7,30 +18,32 @@ const NavBar = () => {
       <styled.wrapper>
         <div className={"search"}>
           <input type={"text"} placeholder={"Search..."} />
-          ICON
+          <SearchOutlinedIcon />
         </div>
         <div className={"items"}>
           <div className={"item"}>
-            <div className={"icon"} /># English
+            <LanguageOutlinedIcon className={"icon"} />
+            English
           </div>
           <div className={"item"}>
-            <div className={"icon"} />#
+            <DarkModeOutlinedIcon className={"icon"} />
           </div>
           <div className={"item"}>
-            <div className={"icon"} />#
+            <FullscreenExitOutlinedIcon className={"icon"} />
           </div>
           <div className={"item"}>
-            <div className={"icon"} />#
+            <NotificationsNoneOutlinedIcon className={"icon"} />
+            <div className="counter">1</div>
           </div>
           <div className={"item"}>
-            <div className={"icon"} />#
+            <ChatBubbleOutlineOutlinedIcon className={"icon"} />
+            <div className="counter">1</div>
           </div>
           <div className={"item"}>
-            <img
-              src={"../src/assets/chewyAvatar"}
-              alt={""}
-              className={"avatar"}
-            />
+            <ListOutlinedIcon className={"icon"} />
+          </div>
+          <div className={"item"}>
+            <img src={"./chewyAvatar.png"} alt={""} className={"avatar"} />
           </div>
         </div>
       </styled.wrapper>

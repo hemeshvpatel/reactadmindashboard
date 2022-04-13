@@ -14,6 +14,7 @@ import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSyst
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
+//styles
 import * as styled from "./styles";
 
 const SideBar = () => {
@@ -32,50 +33,50 @@ const SideBar = () => {
           </li>
           <p className="title">LISTS</p>
           <li>
-            <div className={"icon"} />
+            <PersonOutlineIcon className={"icon"} />
             <span>Users</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <StoreIcon className={"icon"} />
             <span>Products</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <CreditCardIcon className={"icon"} />
             <span>Orders</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <LocalShippingIcon className={"icon"} />
             <span>Delivery</span>
           </li>
           <p className="title">USEFUL</p>
           <li>
-            <div className={"icon"} />
+            <InsertChartIcon className={"icon"} />
             <span>Stats</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <NotificationsNoneIcon className={"icon"} />
             <span>Notifications</span>
           </li>
           <p className="title">SERVICE</p>
           <li>
-            <div className={"icon"} />
+            <SettingsSystemDaydreamOutlinedIcon className={"icon"} />
             <span>System Health</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <PsychologyOutlinedIcon className={"icon"} />
             <span>Logs</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <SettingsApplicationsIcon className={"icon"} />
             <span>Settings</span>
           </li>
           <p className="title">USER</p>
           <li>
-            <div className={"icon"} />
+            <AccountCircleOutlinedIcon className={"icon"} />
             <span>Profile</span>
           </li>
           <li>
-            <div className={"icon"} />
+            <ExitToAppIcon className={"icon"} />
             <span>Logout</span>
           </li>
         </ul>

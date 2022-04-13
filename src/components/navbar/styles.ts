@@ -28,7 +28,7 @@ export const wrapper = styled.div`
       background-color: transparent;
 
       &::placeholder {
-        font-size: 12px;
+        font-size: px;
       }
     }
   }
@@ -41,6 +41,7 @@ export const wrapper = styled.div`
       display: flex;
       align-items: center;
       margin: 20px;
+      position: relative;
 
       .icon {
         font-size: 20px;
@@ -50,6 +51,22 @@ export const wrapper = styled.div`
         width: 30px;
         height: 30px;
         border-radius: 50%;
+      }
+
+      .counter {
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+        position: absolute;
+        top: -5px;
+        right: -5px;
       }
     }
   }
