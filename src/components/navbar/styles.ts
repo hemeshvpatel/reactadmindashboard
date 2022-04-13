@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const container = styled.div`
   height: 50px;
-  border-bottom: 0.5px solid lightgray;
+  border-bottom: 0.5px solid gray;
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: grey;
+  color: black;
 `;
 
 export const wrapper = styled.div`
