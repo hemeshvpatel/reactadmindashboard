@@ -10,11 +10,11 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 
 //styles
-import * as styled from "./styles";
+import * as Styled from "./styles";
 
 const FeaturedChart = () => {
   return (
-    <styled.container>
+    <Styled.Container>
       <div className="top">
         <h1 className="title">Total Revenue</h1>
         <MoreVertIcon fontSize={"small"} />
@@ -52,7 +52,7 @@ const FeaturedChart = () => {
           </div>
         </div>
       </div>
-    </styled.container>
+    </Styled.Container>
   );
 };
 

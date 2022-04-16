@@ -10,12 +10,12 @@ import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutline
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 
 //styles
-import * as styled from "./styles";
+import * as Styled from "./styles";
 
 const NavBar = () => {
   return (
-    <styled.container>
-      <styled.wrapper>
+    <Styled.Container>
+      <Styled.Wrapper>
         <div className={"search"}>
           <input type={"text"} placeholder={"Search..."} />
           <SearchOutlinedIcon />
@@ -46,8 +46,8 @@ const NavBar = () => {
             <img src={"./chewyAvatar.png"} alt={""} className={"avatar"} />
           </div>
         </div>
-      </styled.wrapper>
-    </styled.container>
+      </Styled.Wrapper>
+    </Styled.Container>
   );
 };
 

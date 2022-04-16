@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const container = styled.div`
+export const Container = styled.div`
   flex: 1;
   border-right: 0.5px solid lightgray;
   min-height: 100vh;
@@ -12,7 +12,7 @@ export const container = styled.div`
   }
 `;
 
-export const top = styled.div`
+export const Top = styled.div`
   height: 50px;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ export const top = styled.div`
   }
 `;
 
-export const center = styled.div`
+export const Center = styled.div`
   padding-left: 10px;
 
   ul {
@@ -66,7 +66,7 @@ export const center = styled.div`
   }
 `;
 
-export const bottom = styled.div`
+export const Bottom = styled.div`
   display: flex;
   align-items: center;
   margin: 10px;

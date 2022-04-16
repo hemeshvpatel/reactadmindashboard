@@ -15,16 +15,16 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 //styles
-import * as styled from "./styles";
+import * as Styled from "./styles";
 
 const SideBar = () => {
   return (
-    <styled.container>
-      <styled.top>
+    <Styled.Container>
+      <Styled.Top>
         <span className={"logo"}>logo</span>
-      </styled.top>
+      </Styled.Top>
       <hr />
-      <styled.center>
+      <Styled.Center>
         <ul>
           <p className="title">MAIN</p>
           <li>
@@ -80,12 +80,12 @@ const SideBar = () => {
             <span>Logout</span>
           </li>
         </ul>
-      </styled.center>
-      <styled.bottom>
+      </Styled.Center>
+      <Styled.Bottom>
         <div className={"colorOption"} />
         <div className={"colorOption"} />
-      </styled.bottom>
-    </styled.container>
+      </Styled.Bottom>
+    </Styled.Container>
   );
 };
 

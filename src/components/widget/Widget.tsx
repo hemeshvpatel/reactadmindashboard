@@ -8,7 +8,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 
 //styles
-import * as styled from "./styles";
+import * as Styled from "./styles";
 
 //interfaces
 export interface IWidget {
@@ -89,7 +89,7 @@ const Widget = ({ type }: IWidget) => {
   }
 
   return (
-    <styled.container>
+    <Styled.Container>
       <div className="left">
         <span className="title">{data?.title}</span>
         <span className="counter">
@@ -105,7 +105,7 @@ const Widget = ({ type }: IWidget) => {
         </div>
         {data?.icon}
       </div>
-    </styled.container>
+    </Styled.Container>
   );
 };
 

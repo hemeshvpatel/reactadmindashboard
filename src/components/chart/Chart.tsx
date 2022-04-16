@@ -12,7 +12,7 @@ import {
 } from "recharts";
 
 //styles
-import * as styled from "./styles";
+import * as Styled from "./styles";
 
 //data
 const data = [
@@ -26,7 +26,7 @@ const data = [
 
 const Chart = () => {
   return (
-    <styled.container>
+    <Styled.Container>
       <div className="title">Last 6 Months (Revenue)</div>
       <ResponsiveContainer width={"100%"} aspect={2 / 1}>
         <AreaChart
@@ -54,7 +54,7 @@ const Chart = () => {
           />
         </AreaChart>
       </ResponsiveContainer>
-    </styled.container>
+    </Styled.Container>
   );
 };
 

@@ -1,11 +1,22 @@
 import React from "react";
-import * as styled from "./styles";
+
+//components
+import SideBar from "../../components/sidebar/SideBar";
+import NavBar from "../../components/navbar/NavBar.";
+import DataTable from "../../components/dataTable/DataTable";
+
+//styles
+import * as Styled from "./styles";
 
 const List = () => {
   return (
-    <styled.List>
-      <styled.Title>List</styled.Title>
-    </styled.List>
+    <Styled.Container>
+      <SideBar />
+      <div className="tableContainer">
+        <NavBar />
+        <DataTable />
+      </div>
+    </Styled.Container>
   );
 };
 

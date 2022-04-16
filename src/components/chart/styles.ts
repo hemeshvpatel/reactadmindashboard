@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export const container = styled.div`
+export const Container = styled.div`
   flex: 4;
   //html-css-js.com/css/generator/box-shadow
   -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);

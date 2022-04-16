@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const container = styled.div`
+export const Container = styled.div`
   height: 50px;
   border-bottom: 0.5px solid gray;
   display: flex;
@@ -9,7 +9,7 @@ export const container = styled.div`
   color: black;
 `;
 
-export const wrapper = styled.div`
+export const Wrapper = styled.div`
   padding: 20px;
   display: flex;
   align-items: center;

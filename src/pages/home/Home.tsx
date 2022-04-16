@@ -1,29 +1,38 @@
 import React from "react";
-import * as styled from "./styles";
+
+//components
 import SideBar from "../../components/sidebar/SideBar";
 import NavBar from "../../components/navbar/NavBar.";
 import Widget from "../../components/widget/Widget";
 import FeaturedChart from "../../components/featuredChart/FeaturedChart";
 import Chart from "../../components/chart/Chart";
+import TransactionsTable from "../../components/table/Table";
+
+//styles
+import * as Styled from "./styles";
 
 const Home = () => {
   return (
-    <styled.home>
+    <Styled.Home>
       <SideBar />
-      <styled.container>
+      <Styled.Container>
         <NavBar />
-        <styled.widgets>
+        <Styled.Widgets>
           <Widget type={"users"} />
           <Widget type={"orders"} />
           <Widget type={"earnings"} />
           <Widget type={"balance"} />
-        </styled.widgets>
-        <styled.charts>
+        </Styled.Widgets>
+        <Styled.Charts>
           <FeaturedChart />
           <Chart />
-        </styled.charts>
-      </styled.container>
-    </styled.home>
+        </Styled.Charts>
+        <Styled.Table>
+          <div className="title">Latest Transactions</div>
+          <TransactionsTable />
+        </Styled.Table>
+      </Styled.Container>
+    </Styled.Home>
   );
 };
 
