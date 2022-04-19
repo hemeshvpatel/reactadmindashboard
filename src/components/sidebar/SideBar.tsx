@@ -1,5 +1,8 @@
 import React from "react";
 
+//router
+import { Link } from "react-router-dom";
+
 //icons
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
@@ -21,7 +24,9 @@ const SideBar = () => {
   return (
     <Styled.Container>
       <Styled.Top>
-        <span className={"logo"}>logo</span>
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          <span className={"logo"}>logo</span>
+        </Link>
       </Styled.Top>
       <hr />
       <Styled.Center>
@@ -32,14 +37,18 @@ const SideBar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li>
-            <PersonOutlineIcon className={"icon"} />
-            <span>Users</span>
-          </li>
-          <li>
-            <StoreIcon className={"icon"} />
-            <span>Products</span>
-          </li>
+          <Link to={"/users"} style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className={"icon"} />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to={"/products"} style={{ textDecoration: "none" }}>
+            <li>
+              <StoreIcon className={"icon"} />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className={"icon"} />
             <span>Orders</span>

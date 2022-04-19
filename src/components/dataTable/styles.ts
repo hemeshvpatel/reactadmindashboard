@@ -5,6 +5,27 @@ export const Container = styled.div`
   width: 100%;
   padding: 20px;
 
+  .dataTableTitle {
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
   .cellWithImg {
     display: flex;
     align-items: center;

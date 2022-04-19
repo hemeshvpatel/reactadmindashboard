@@ -43,7 +43,7 @@ const NavBar = () => {
             <ListOutlinedIcon className={"icon"} />
           </div>
           <div className={"item"}>
-            <img src={"./chewyAvatar.png"} alt={""} className={"avatar"} />
+            <img src={"/chewyAvatar.png"} alt={""} className={"avatar"} />
           </div>
         </div>
       </Styled.Wrapper>

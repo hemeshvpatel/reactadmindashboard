@@ -24,11 +24,17 @@ const data = [
   { name: "June", Total: 1800 },
 ];
 
-const Chart = () => {
+//ts
+export interface IChartProps {
+  aspect: number;
+  title: string;
+}
+
+const Chart = ({ aspect, title }: IChartProps) => {
   return (
     <Styled.Container>
-      <div className="title">Last 6 Months (Revenue)</div>
-      <ResponsiveContainer width={"100%"} aspect={2 / 1}>
+      <div className="title">{title}</div>
+      <ResponsiveContainer width={"100%"} aspect={aspect}>
         <AreaChart
           width={730}
           height={250}

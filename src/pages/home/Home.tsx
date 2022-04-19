@@ -25,7 +25,7 @@ const Home = () => {
         </Styled.Widgets>
         <Styled.Charts>
           <FeaturedChart />
-          <Chart />
+          <Chart aspect={2} title={"Last 6 Months (Revenue)"} />
         </Styled.Charts>
         <Styled.Table>
           <div className="title">Latest Transactions</div>

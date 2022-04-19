@@ -40,6 +40,12 @@ const DataTable = () => {
 
   return (
     <Styled.Container>
+      <div className="dataTableTitle">
+        Add New User
+        <Link to={"/users/new"} className={"link"}>
+          Add New
+        </Link>
+      </div>
       <DataGrid
         rows={userRows}
         columns={userColumns.concat(actionColumn)}

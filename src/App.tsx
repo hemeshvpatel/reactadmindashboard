@@ -10,8 +10,12 @@ import New from "./pages/new/New";
 //routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+//data
+import { productInputs, userInputs } from "./formSource";
+
 //styles
 import GlobalStyles from "./globals/global";
+import { Dark } from "./globals/dark";
 
 const App = () => {
   return (
@@ -25,12 +29,18 @@ const App = () => {
             <Route path="users">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
-              <Route path="new" element={<New />} />
+              <Route
+                path="new"
+                element={<New data={userInputs} title={"Add New User"} />}
+              />
             </Route>
             <Route path="products">
               <Route index element={<List />} />
               <Route path=":productId" element={<Single />} />
-              <Route path="new" element={<New />} />
+              <Route
+                path="new"
+                element={<New data={productInputs} title={"Add New Product"} />}
+              />
             </Route>
           </Route>
         </Routes>
