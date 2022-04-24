@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 //mui
@@ -11,8 +11,10 @@ import { userColumns, userRows } from "../../datatablesource";
 import * as Styled from "./styles";
 
 const DataTable = () => {
+  const [data, setData] = useState(userRows);
+
   const handleDelete = (id: number) => {
-    console.log("delete");
+    setData(data.filter((item) => item.id !== id));
   };
 
   const actionColumn = [
@@ -47,7 +49,7 @@ const DataTable = () => {
         </Link>
       </div>
       <DataGrid
-        rows={userRows}
+        rows={data}
         columns={userColumns.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[10]}

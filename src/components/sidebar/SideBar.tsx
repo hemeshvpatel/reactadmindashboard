@@ -23,13 +23,13 @@ import * as Styled from "./styles";
 const SideBar = () => {
   return (
     <Styled.Container>
-      <Styled.Top>
+      <Styled.Logo>
         <Link to={"/"} style={{ textDecoration: "none" }}>
           <span className={"logo"}>logo</span>
         </Link>
-      </Styled.Top>
+      </Styled.Logo>
       <hr />
-      <Styled.Center>
+      <Styled.Links>
         <ul>
           <p className="title">MAIN</p>
           <li>
@@ -89,11 +89,7 @@ const SideBar = () => {
             <span>Logout</span>
           </li>
         </ul>
-      </Styled.Center>
-      <Styled.Bottom>
-        <div className={"colorOption"} />
-        <div className={"colorOption"} />
-      </Styled.Bottom>
+      </Styled.Links>
     </Styled.Container>
   );
 };

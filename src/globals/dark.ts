@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export const Dark = () => {};
+export const Dark = styled.div``;

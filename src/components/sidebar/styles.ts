@@ -12,7 +12,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Top = styled.div`
+export const Logo = styled.div`
   height: 50px;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ export const Top = styled.div`
   }
 `;
 
-export const Center = styled.div`
+export const Links = styled.div`
   padding-left: 10px;
 
   ul {
@@ -62,28 +62,6 @@ export const Center = styled.div`
         color: #919191;
         margin-left: 10px;
       }
-    }
-  }
-`;
-
-export const Bottom = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 10px;
-
-  .colorOption {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid mediumpurple;
-    cursor: pointer;
-    margin: 5px;
-
-    &:nth-child(1) {
-      background-color: whitesmoke;
-    }
-    &:nth-child(2) {
-      background-color: black;
     }
   }
 `;
